@@ -1,0 +1,47 @@
+package com.example.zwallet.ui.auth.signin
+
+import com.example.zwallet.network.HttpClient
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.disposables.CompositeDisposable
+import io.reactivex.schedulers.Schedulers
+
+class SigninPresenter(private val view:SignContract.View  ) : SignContract.Presenter {
+
+    private val mCompositeDisposable : CompositeDisposable?
+
+    init {
+        this.mCompositeDisposable = CompositeDisposable()
+    }
+
+    override fun submitLogin(email: String, password: String) {
+        view.showLoading()
+        val disposable = HttpClient.getInstance().getApi()!!.login(email, password)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(
+                        {
+                            view.dismissLoading()
+                            if (it.success.equals(true)) {
+                                it.token?.let { it1 -> view.onLoginSuccess(it1) }
+                            } else {
+                                it.message?.let { it1 -> view.onLoginFailed(it1) }
+                            }
+                        },
+                        {
+                            view.dismissLoading()
+                            view.onLoginFailed(it.message.toString())
+                        }
+                )
+        mCompositeDisposable!!.add(disposable)
+    }
+
+    override fun subcribe() {
+
+    }
+
+    override fun unSubcribe() {
+        mCompositeDisposable!!.clear()
+    }
+
+
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/transaction_navigation"
+    app:startDestination="@id/fragment_search_receiver">
+
+    <fragment
+        android:id="@+id/fragment_search_receiver"
+        tools:layout="@layout/fragment_search_receiver"
+        android:name="com.example.zwallet.ui.transaction.searchreceiver.SearchReceiverFragment"
+        >
+
+        <action
+            android:id="@+id/action_input_saldo"
+            app:destination="@id/fragment_input_saldo" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_input_saldo"
+        tools:layout="@layout/fragment_input_saldo"
+        android:name="com.example.zwallet.ui.transaction.inputsaldo.InputSaldoFragment"
+        >
+        <action
+            android:id="@+id/action_confirmation"
+            app:destination="@id/fragment_confirmation" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_confirmation"
+        tools:layout="@layout/fragment_confirmation"
+        android:name="com.example.zwallet.ui.transaction.confirmation.ConfirmationFragment"
+        >
+        <action
+            android:id="@+id/action_pin_confirmation"
+            app:destination="@id/fragment_pin_confirmation" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_pin_confirmation"
+        tools:layout="@layout/fragment_pin_confirmation"
+        android:name="com.example.zwallet.ui.transaction.pinconfirmation.PinConfirmationFragment"
+        >
+        <action
+            android:id="@+id/action_status_transfer"
+            app:destination="@id/fragment_status_transfer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_status_transfer"
+        tools:layout="@layout/fragment_status_transfer"
+        android:name="com.example.zwallet.ui.transaction.statustransfer.StatusTransferFragment"
+        >
+
+    </fragment>
+
+</navigation>

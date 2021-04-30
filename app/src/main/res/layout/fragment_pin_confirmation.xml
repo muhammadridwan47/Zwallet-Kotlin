@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="#F9FBFE"
+    tools:context=".ui.transaction.pinconfirmation.PinConfirmationFragment">
+
+    <TextView
+        style="@style/TextView.NunitoSansRegular16"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#7A7886"
+        android:lineHeight="27sp"
+        android:text="Enter your 6 digits PIN for confirmation to continue transferring money." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <EditText
+                android:id="@+id/ivPin1"
+                android:hint="_"
+                android:background="@drawable/border_bottom_input_pinconfirmation"
+                android:paddingVertical="13dp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="47dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:textSize="24sp"
+                android:maxLength="1"
+                android:textColor="#3A3D42"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <EditText
+                android:id="@+id/ivPin2"
+                android:hint="_"
+                android:maxLength="1"
+                android:background="@drawable/border_bottom_input_pinconfirmation"
+                android:paddingVertical="13dp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="47dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:textSize="24sp"
+                android:textColor="#3A3D42"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <EditText
+                android:id="@+id/ivPin3"
+                android:hint="_"
+                android:maxLength="1"
+                android:background="@drawable/border_bottom_input_pinconfirmation"
+                android:paddingVertical="13dp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="47dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:textSize="24sp"
+                android:textColor="#3A3D42"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <EditText
+                android:id="@+id/ivPin4"
+                android:hint="_"
+                android:maxLength="1"
+                android:background="@drawable/border_bottom_input_pinconfirmation"
+                android:paddingVertical="13dp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="47dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:textSize="24sp"
+                android:textColor="#3A3D42"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <EditText
+                android:id="@+id/ivPin5"
+                android:hint="_"
+                android:maxLength="1"
+                android:background="@drawable/border_bottom_input_pinconfirmation"
+                android:paddingVertical="13dp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="47dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:textSize="24sp"
+                android:textColor="#3A3D42"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <EditText
+                android:id="@+id/ivPin6"
+                android:hint="_"
+                android:maxLength="1"
+                android:background="@drawable/border_bottom_input_pinconfirmation"
+                android:paddingVertical="13dp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="47dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:textSize="24sp"
+                android:textColor="#3A3D42"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ivBtnTransfer"
+        android:layout_marginBottom="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_radius_primary"
+        android:paddingVertical="16dp"
+        android:text="Transfer Now"
+        android:textColor="#FFF" />
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    tools:context=".ui.transaction.statustransfer.StatusTransferFragment">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_success"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="22sp"
+        android:textColor="#4D4B57"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Transfer Success"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#514F5B"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Details"/>
+
+    <include
+        android:id="@+id/includeAmount"
+        layout="@layout/list_item_vertical_noimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <include
+        android:id="@+id/includeBalanceLeft"
+        android:layout_marginTop="20dp"
+        layout="@layout/list_item_vertical_noimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <include
+        android:id="@+id/includeDate"
+        layout="@layout/list_item_vertical_noimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <include
+        android:id="@+id/includeNotes"
+        android:layout_marginTop="20dp"
+        layout="@layout/list_item_vertical_noimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        style="@style/TextView.NunitoSansBold18"
+        android:textColor="#514F5B"
+        android:text="Transfer to"/>
+
+    <include
+        android:id="@+id/includeProfile"
+        layout="@layout/list_item_vertical_noprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/ivBtnContinue"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_radius_primary"
+        android:paddingVertical="16dp"
+        android:text="Back to Home"
+        android:layout_marginBottom="25dp"
+        android:textColor="#FFF" />
+
+</LinearLayout>
+</ScrollView>

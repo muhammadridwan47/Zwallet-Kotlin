@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingVertical="20dp"
+    android:paddingHorizontal="16dp"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/list_item_radius_10"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgList"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        tools:srcCompat="@tools:sample/avatars" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/nameList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextView.NunitoSansBold16"
+            android:layout_marginBottom="9dp"
+            android:textColor="#4D4B57"
+            android:text="Samuel Suhi"/>
+        <TextView
+            android:id="@+id/typeList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextView.NunitoSansRegular14"
+            android:textColor="#7A7886"
+            android:text="Transfer"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/priceList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@style/TextView.NunitoSansBold18"
+        android:textColor="#1EC15F"
+        android:text="+Rp50.000"/>
+
+
+
+</LinearLayout>

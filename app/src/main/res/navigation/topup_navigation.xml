@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragment_main_topup"
+    android:id="@+id/topup_navigation">
+
+    <fragment
+        android:id="@+id/fragment_main_topup"
+        tools:layout="@layout/fragment_main_top_up"
+        android:name="com.example.zwallet.ui.topup.maintopup.MainTopUpFragment"
+        >
+    </fragment>
+</navigation>
+
+

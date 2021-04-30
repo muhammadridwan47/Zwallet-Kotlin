@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextView">
+
+    </style>
+
+    <style name="TextView.splashscreen">
+        <item name="android:textColor" >@color/white</item>
+        <item name="android:fontFamily">@font/nunito_sans_bold</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="TextView.ZwalletAuth">
+        <item name="android:textColor" >@color/color_primary</item>
+        <item name="android:fontFamily">@font/nunito_sans_bold</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:text">@string/app_name</item>
+    </style>
+
+
+    <style name="TextView.NunitoSansRegular14">
+        <item name="android:fontFamily">@font/nunito_sans</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="TextView.NunitoSansRegular16">
+        <item name="android:textColor" >@color/color_grey</item>
+        <item name="android:fontFamily">@font/nunito_sans</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextView.NunitoSansRegular18">
+        <item name="android:textColor" >@color/color_grey</item>
+        <item name="android:fontFamily">@font/nunito_sans</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+            <!--    Bold area -->
+
+    <style name="TextView.NunitoSansSemiBold14">
+        <item name="android:textColor" >@color/color_grey</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextView.NunitoSansBold16">
+        <item name="android:textColor" >@color/color_black</item>
+        <item name="android:fontFamily">@font/nunito_sans_bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextView.NunitoSansBold18">
+        <item name="android:fontFamily">@font/nunito_sans_bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextView.NunitoSansBold24">
+        <item name="android:fontFamily">@font/nunito_sans_bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+
+    <style name="EditText" />
+
+    <style name="EditText.Input" >
+        <item name="android:textColor">@color/color_grey_light</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/nunito_sans</item>
+        <item name="android:drawablePadding">18dp</item>
+        <item name="android:paddingBottom">11dp</item>
+    </style>
+
+
+</resources>
